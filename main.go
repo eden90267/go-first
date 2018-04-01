@@ -1,12 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	_ "github.com/eden90267/go-first/bar"
+	_ "github.com/eden90267/go-first/foo"
+)
 
 func main() {
-	a := 1
-	fmt.Println("Hello World!!")
-
-	if a > 1 {
-		fmt.Println(" a > 1")
-	}
+	//fmt.Print(HelloWorld())
+	fmt.Println("Hello main")
 }
